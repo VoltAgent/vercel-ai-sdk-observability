@@ -12,6 +12,65 @@ cd vercel-ai-sdk-observability
 npm install
 ```
 
+### Environment Setup
+
+**Get your VoltAgent API Keys:**
+- Sign up at [https://console.voltagent.dev/](https://console.voltagent.dev/)
+- Create an organization and project
+- Copy your `VOLTAGENT_PUBLIC_KEY` and `VOLTAGENT_SECRET_KEY`
+
+**Get your OpenAI API Key:**
+- Visit [OpenAI Platform](https://platform.openai.com/api-keys)
+- Create a new API key
+
+Create a `.env` file and add your API keys:
+
+```bash
+# Create .env file
+cp .env.example .env
+```
+
+Then add your keys to the `.env` file:
+
+```env
+# OpenAI API Key
+OPENAI_API_KEY=your_openai_api_key_here
+
+# VoltAgent Keys
+VOLTAGENT_PUBLIC_KEY=your_voltagent_public_key_here
+VOLTAGENT_SECRET_KEY=your_voltagent_secret_key_here
+```
+
+### Run the Demo
+
+```bash
+npm run dev
+```
+
+## Interactive Learning Demo
+
+When you run `npm run dev`, you'll see an interactive menu:
+
+```
+🎬 VoltAgent Progressive Learning Demo
+Learn how to integrate VoltAgent observability step-by-step
+
+🚀 VoltAgent + Vercel AI SDK Progressive Examples
+Learn step-by-step how to add observability:
+
+1. Basic Telemetry (minimal setup)
+2. With Tools (see tool tracking)
+3. With Metadata (agent identification)
+4. More Metadata (user tracking & tags)
+5. Multi-Agent (parent-child relationships)
+6. Run All Examples
+9. Exit
+
+Which example would you like to run? (1-6, 9):
+```
+
+Each example builds on the previous one, showing you how to progressively enhance your AI applications with VoltAgent observability.
+
 ## What You'll Learn
 
 This example shows the **progressive enhancement** approach to adding observability:
