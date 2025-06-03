@@ -1,5 +1,3 @@
-
-
 # VoltAgent LLM Observability Platform + Vercel AI SDK Integration Example
 
 This example demonstrates how to add **VoltAgent observability** to your existing Vercel AI applications with minimal code changes. Track AI calls, tool usage, and multi-agent workflows in the VoltAgent Developer Console.
@@ -9,7 +7,9 @@ This example demonstrates how to add **VoltAgent observability** to your existin
 ## Quick Start
 
 ```bash
-npm create voltagent-app@latest -- --example with-vercel-ai-observability
+git clone https://github.com/VoltAgent/vercel-ai-sdk-observability
+cd vercel-ai-sdk-observability
+npm install
 ```
 
 ## What You'll Learn
